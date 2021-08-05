@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactanos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devide-width, initial-scale=1">
+	<meta name="description" content="Talabartería. Ante cualquier duda comunicate con nosotros al 15-xxxxxxx de lunes a viernes de 9 a 18hs">
+	<link rel="stylesheet" href="css-scss/animate.min.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css-scss/estilos.css" type="text/css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid header">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<a class="navbar-brand logo" href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" href="index.html">Inicio </a>
+						<a class="nav-link" href="producto.html">Productos</a>
+						<a class="nav-link" href="comocomprar.html">Cómo Comprar</a>
+						<a class="nav-link" href="nosotros.html">Nosotros</a>
+						<a class="nav-link active" href="contacto.html">Contacto</a>
+					</div>
+					<div class="contenedorBotonesHeader">
+						<span class="dropdown">
+							<button class="botonesHeader btn rounded-pill dropdown-toggle my-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<a href="#"><i class="bi bi-person-fill"></i><img src="imagenes/person-fill.svg" alt="Botón para ingresar a tú cuenta"> Mi cuenta</a>
+							</button>
+							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+								<button class="btn" data-toggle="modal" data-target="#headerModal">
+									<a class="dropdown-item" href="#">Ingresar</a>
+									<a class="dropdown-item" href="#">Crear cuenta</a>
+								</button>
+							</div>
+						</span>
+						<span>
+							<button class="botonesHeader btn rounded-pill my-1" data-toggle="modal" data-target="#headerModal">
+								<a href="#"><i class="bi bi-bag"></i><img src="imagenes/bag.svg" alt="Carrito de compras"> Carrito</a>
+							</button>
+						</span>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div class="contenido">
+		<p class="titulo">CONTACTANOS</p>
+		<div class="container row mx-auto">
+			<div class="col-12 col-md-6 col-lg-6">
+				<form class="reseteoFormulario formulario">
+					<div class="form-group row justify-content-center">
+						<div class="col-sm-10">
+							<label for="nombre" class="form-label">Nombre</label>
+							<input type="text" class="form-control" placeholder="Ingrese su nombre" id="nombre">
+						</div>
+					</div>
+					<div class="form-group row justify-content-center">
+						<div class="col-sm-10">
+							<label for="inputEmail3">Email</label>
+							<input type="email" class="form-control" placeholder="Ingrese su email" id="inputEmail3">
+						</div>
+					</div>
+					<div class="form-group row justify-content-center">
+						<div class="col-sm-10">
+							<label for="apellido">Asunto</label>
+							<input type="text" class="form-control" placeholder="Indique su asunto" id="apellido">
+						</div>
+					</div>
+					<div class="form-group row justify-content-center">
+						<div class="col-sm-10">
+							<label for="comentarios">Mensaje</label>
+							<textarea class="form-control" name="" placeholder="Escriba su mensaje" id="comentarios" cols="10" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="col-sm-10 mx-0 px-0 mx-md-4 mx-lg-5">
+						<button type="button" class="boton btn btn-dark rounded-pill" data-toggle="modal" data-target="#contactoModal">Enviar</button>
+					</div>
+				</form>
+			</div>
+			<div class="imagenContacto col-11 col-md-6 col-lg-6 mx-auto my-2 my-md-0 my-md-0"></div><!--
+			<div class="container mx-auto pt-5 contacto">
+				<div class="col-12 col-md-6 col-lg-8 offset-lg-2">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29644.655042673337!2d-58.686889431393155!3d-34.647527210423945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf7809861d5d%3A0x6bc97859fd9d3d86!2sItuzaing%C3%B3%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1626654499673!5m2!1ses!2sar" allowfullscreen="" loading="lazy"></iframe>
+				</div>
+			</div>-->
+		</div>
+	</div>	
+	<div class="container-fluid row mx-auto text-center informacionFooter">
+		<div class="col-12 col-md-3 col-lg-3">
+			<p>
+				<i class="bi bi-whatsapp"></i>
+				<img src="imagenes/whatsapp.svg" alt="Icono de whatsapp">
+				<strong>WHATSAPP</strong>
+			</p>
+			<p>+549(11) 6811-6930</p>
+		</div>
+		<div class="col-12 col-md-3 col-lg-3">
+			<p>
+				<i class="bi bi-clock"></i>
+				<img src="imagenes/clock.svg" alt="Icono de un reloj">
+				<strong>HORARIOS</strong>
+			</p>
+			<p>Lunes a Viernes</p>
+			<p>9:00 a 13:00 - 14:00 a 18:00</p>
+			<p>Sábado - 9:00 a 13:00</p>
+		</div>
+		<div class="col-12 col-md-3 col-lg-3">
+			<p>
+				<i class="bi bi-envelope"></i><img src="imagenes/email.svg" alt="Icono del email">
+				<strong>EMAIL</strong>
+			</p>
+			<p>laaguada@gmail.com</p>
+		</div>
+		<div class="col-12 col-md-3 col-lg-3">
+			<p>
+				<i class="bi bi-globe"></i>
+				<img src="imagenes/redes.svg" alt="Icono representativo de las redes sociales">
+				<strong>REDES</strong>
+			</p>
+			<span class="socialMedia">
+				<a href="https://www.instagram.com/laaguada.talabarteria/?hl=es-la" rel="noopener noreferrer" target="_blank">
+					<i class="bi bi-instagram"></i>
+					<img src="imagenes/instagram.svg" alt="Logo de Instagram" title="Síguenos en Instagram">
+				</a>
+			</span>
+			<span class="socialMedia">
+				<a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
+					<i class="bi bi-facebook"></i>
+					<img src="imagenes/facebook.svg" alt="Logo de Facebook" title="Síguenos en Facebook">
+				</a>			
+			</span>
+			<span class="socialMedia">
+				<a href="https://ar.linkedin.com/" rel="noopener noreferrer" target="_blank">
+					<i class="bi bi-linkedin"></i>
+					<img src="imagenes/linkedin.svg" alt="Logo de Linkedin" title="Síguenos en Linkedin">
+				</a>			
+			</span>
+		</div>
+	</div>
+	<div class="footer container-fluid text-center py-2">
+		<p>La Aguada Talabartería | Todos los derechos reservados | Desarrollo por Bertilotti Lucas<p>
+	</div> 
+	<!-- Modal Header-->
+	<div class="modal fade" id="headerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"><strong>La Aguada Talabartería</strong></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Sitio en construcción.</p>
+					<p>Muy pronto estará disponible!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark rounded-pill boton" data-dismiss="modal">Salir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Contacto-->
+	<div class="modal fade" id="contactoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"><strong>Contacto</strong></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Muchas gracias por su consulta.</p>
+					<p>En breve nos pondremos en contacto.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark rounded-pill boton" data-dismiss="modal">Salir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -55,13 +55,14 @@ body{
 		max-width: 1024;
 		max-height: 700px;
 
-		/*
-		height: 100%;
+	/*	margin-top: 100px;
+		height: 70vh;
 		width: 100%;
 		object-fit: contain;
 		max-width: 1024;
 		max-height: 700px;		
-		*/
+		
+	*/
 	}
 }
 .titulo{
@@ -74,7 +75,6 @@ body{
 	padding-top: 80px;
 }
 .contenedorProducto{
-	border: 1px solid #000;
 	transition: all 450ms ease-in-out;
     img{
 		width: 200px;
@@ -83,8 +83,6 @@ body{
 	}
     &:hover{
         transform: scale(1.1);
-        background-color: #fff;
-        color: #000;
     }
 	p{
 		margin: 0;
@@ -93,6 +91,39 @@ body{
 		font-size: $fuente-chico;
 	}
 }
+
+//---------producto inicio
+.galeriaProductos{
+	border: none;
+	max-width: 230px;
+	transition: all 450ms ease-in-out;
+	&:hover{
+		transform: scale(1.1);
+	}
+	.card-img-top{
+		height: 200px;
+	}
+	.card-title{
+		font-size: 1rem;
+		font-weight: 600;
+	}
+	.card-text{
+		font-size: $fuente-chico;
+	}
+	.btn{
+		box-shadow: none !important;
+		padding: .2rem .5rem;
+		font-size: .8rem;
+		&:focus{
+			outline: none;
+			box-shadow: none;
+			border: 1px solid $bg-color-main;
+		}
+	}
+}
+
+
+//---------producto fin
 .mediosPago{
 	width: 50px;
 	height: 50px;
@@ -166,6 +197,13 @@ body{
 	border-bottom: 1px solid #000;	
 }
 //------Productos------
+.productos{
+	width: 100px;
+	height: 100px;
+}
+
+/*
+
 .articulos{
 	display: flex;
 	flex-flow: row wrap;
@@ -194,8 +232,10 @@ body{
 		}
 	}
 }
+
+*/
 //------Como comprar------
-.card{
+.comoComprar .card{
 	border: 2px solid #000;
 	border-radius: 2rem;
 	.card-header{

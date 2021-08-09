@@ -4,7 +4,7 @@
 	<title>Sobre nosotros</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=devide-width, initial-scale=1">
-	<meta name="description" content="Talabartería. Aquí te contamos la historia de nuestra empresa familiar.">
+	<meta name="description" content="La Aguada Talabartería. Aquí te contamos la historia de nuestra empresa familiar.">
 	<link rel="stylesheet" href="css-scss/animate.min.css"/>
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css-scss/estilos.css" type="text/css">
@@ -52,14 +52,14 @@
 			<p class="titulo">NOSOTROS</p>
 		</div>
 		<div class="container row mx-auto my-3">
-			<div class="col-12 col-md-12 col-lg-5 WOW animate__animated animate__fadeInLeft">
+			<div class="col-12 col-md-12 col-lg-6 WOW animate__animated animate__fadeInLeft">
 				<div class="contenedorImagen"></div>
 			</div>
-			<div class="col-12 my-3 col-md-12 my-md-3 col-lg-7 my-lg-0 text-center presentacion WOW animate__animated animate__fadeInRight">
+			<div class="col-12 my-3 col-md-12 my-md-3 col-lg-6 my-lg-0 text-center presentacion WOW animate__animated animate__fadeInRight">
 				<p><strong>Talabartería La Aguada</strong> es un emprendimiento familiar de padre e hijo que comenzó en el año 2013, como todas las cosas, todo tiene un inicio y este fue durante el 2008, donde comenzamos con el aprendizaje en el oficio de la soguería y los primeros trabajos en cuero.</p>
 				<p>Con la ayuda de toda la familia, logramos concretar la apertura del negocio de talabartería y regalaría en la calle Mansilla en la localidad de Ituzaingó hasta el año 2016.</p>
 				<p>Con el motor que significa el amor hacia los caballos es que continuamos con la comercialización de los productos relacionados con la equitación, algunos de elaboración propia y otros incorporados con el fin de brindar un servicio a todos los amantes de esta actividad.</p>
-				<p>Hoy contamos con una línea de productos, que gracias a la comunicación que nos brindan las redes sociales, nos permite llegar a todo el País.</p>
+				<p>Hoy contamos con una línea de productos, que gracias a la comunicación que nos brindan las redes sociales, nos permite llegar a todo el país.</p>
 			</div>
 		</div>
 	</div>
@@ -84,35 +84,46 @@
 		</div>
 		<div class="col-12 col-md-3 col-lg-3">
 			<p>
-				<i class="bi bi-envelope"></i><img src="imagenes/email.svg" alt="Icono del email">
-				<strong>EMAIL</strong>
-			</p>
-			<p>laaguada@gmail.com</p>
-		</div>
-		<div class="col-12 col-md-3 col-lg-3">
-			<p>
 				<i class="bi bi-globe"></i>
 				<img src="imagenes/redes.svg" alt="Icono representativo de las redes sociales">
 				<strong>REDES</strong>
 			</p>
-			<span class="socialMedia">
-				<a href="https://www.instagram.com/laaguada.talabarteria/?hl=es-la" rel="noopener noreferrer" target="_blank">
-					<i class="bi bi-instagram"></i>
-					<img src="imagenes/instagram.svg" alt="Logo de Instagram" title="Síguenos en Instagram">
-				</a>
-			</span>
-			<span class="socialMedia">
-				<a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">
-					<i class="bi bi-facebook"></i>
-					<img src="imagenes/facebook.svg" alt="Logo de Facebook" title="Síguenos en Facebook">
-				</a>			
-			</span>
-			<span class="socialMedia">
-				<a href="https://ar.linkedin.com/" rel="noopener noreferrer" target="_blank">
-					<i class="bi bi-linkedin"></i>
-					<img src="imagenes/linkedin.svg" alt="Logo de Linkedin" title="Síguenos en Linkedin">
-				</a>			
-			</span>
+			<a class="socialMedia" href="https://www.instagram.com/laaguada.talabarteria/?hl=es-la" rel="noopener noreferrer" target="_blank">
+				<i class="bi bi-instagram"></i>
+				<img src="imagenes/instagram.svg" alt="Logo de Instagram" title="Síguenos en Instagram">
+			</a>
+			<a class="socialMedia" href="https://www.facebook.com/laaguada.salvat" rel="noopener noreferrer" target="_blank">
+				<i class="bi bi-facebook"></i>
+				<img src="imagenes/facebook.svg" alt="Logo de Facebook" title="Síguenos en Facebook">
+			</a>
+			<a class="socialMedia" href="https://ar.linkedin.com/" rel="noopener noreferrer" target="_blank">
+				<i class="bi bi-linkedin"></i>
+				<img src="imagenes/linkedin.svg" alt="Logo de Linkedin" title="Síguenos en Linkedin">
+			</a>
+		</div>
+		<div class="col-12 col-md-3 col-lg-3">
+			<p>
+				<i class="bi bi-envelope"></i><img src="imagenes/email.svg" alt="Icono del email">
+				<strong>NEWSLETTER</strong>
+			</p>
+			<p class="text-left m-0">Dejanos tus datos para suscribirte a nuestro Newsletter y recibir en tu email las últimas novedades de La Aguada.</p>
+			<form>
+				<div class="form-group row my-0 reseteoFormulario">
+					<div class="col-sm-12">
+						<label for="NombreApellido"></label>
+						<input type="text" class="form-control" placeholder="Nombre y Apellido" id="NombreApellido">
+					</div>
+				</div>
+				<div class="form-group row reseteoFormulario">
+					<div class="col-sm-12">
+						<label for="inputEmail3"></label>
+						<input type="email" class="form-control" placeholder="Email" id="inputEmail3">
+					</div>
+				</div>
+				<div class="col-sm-10 text-left mb-3 reseteoFormulario">
+					<button type="button" class="boton btn btn-dark rounded-pill" data-toggle="modal" data-target="#newsletterModal">Enviar</button>
+				</div>
+			</form>
 		</div>
 	</div>
 	<div class="footer container-fluid text-center py-2">
@@ -131,6 +142,26 @@
 				<div class="modal-body">
 					<p>Sitio en construcción.</p>
 					<p>Muy pronto estará disponible!</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-dark rounded-pill boton" data-dismiss="modal">Salir</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Newsletter-->
+	<div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel"><strong>Newsletter</strong></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Muchas gracias por suscribirte!</p>
+					<p>Estarás recibiendo todas las novedades.</p>
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-dark rounded-pill boton" data-dismiss="modal">Salir</button>

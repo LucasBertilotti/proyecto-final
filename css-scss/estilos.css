@@ -9,7 +9,7 @@ body {
   font-family: "Overpass", sans-serif;
   font-weight: 400;
   color: #000;
-  font-size: .9rem;
+  font-size: 1rem;
 }
 
 .header {
@@ -55,29 +55,33 @@ body {
   }
 }
 
-.tamañoCarrousel {
-  margin-top: 100px;
-  width: 80%;
+.carousel .tamañoCarrousel {
+  margin-top: 80px;
 }
 
-.tamañoCarrousel img {
-  height: 70vh;
-  max-width: 1024;
-  max-height: 700px;
-  /*	margin-top: 100px;
-		height: 70vh;
-		width: 100%;
-		object-fit: contain;
-		max-width: 1024;
-		max-height: 700px;		
-		
-	*/
+.carousel .tamañoCarrousel img {
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.carousel svg {
+  width: 30px;
+  color: #fff;
+}
+
+@media all and (max-width: 1025px) {
+  .tamañoCarrousel img {
+    height: 40vh;
+    -o-object-fit: revert;
+       object-fit: revert;
+  }
 }
 
 .titulo {
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -91,8 +95,8 @@ body {
 }
 
 .contenedorProducto img {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   padding-bottom: 5px;
 }
 
@@ -106,46 +110,7 @@ body {
 }
 
 .contenedorProducto .descripcionProducto {
-  font-size: 0.7rem;
-}
-
-.galeriaProductos {
-  border: none;
-  max-width: 230px;
-  -webkit-transition: all 450ms ease-in-out;
-  transition: all 450ms ease-in-out;
-}
-
-.galeriaProductos:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.galeriaProductos .card-img-top {
-  height: 200px;
-}
-
-.galeriaProductos .card-title {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-.galeriaProductos .card-text {
-  font-size: 0.7rem;
-}
-
-.galeriaProductos .btn {
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-  padding: .2rem .5rem;
-  font-size: .8rem;
-}
-
-.galeriaProductos .btn:focus {
-  outline: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 1px solid #9d5959;
+  font-size: 0.8rem;
 }
 
 .mediosPago {
@@ -179,8 +144,8 @@ body {
 }
 
 .boton:hover {
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #000;
+  border-color: #000;
   color: #fff;
 }
 
@@ -190,18 +155,18 @@ body {
 
 .footer p {
   color: #000;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin: 0;
 }
 
 .informacionFooter {
   margin-top: 3rem;
   padding-top: 1rem;
-  background-color: #9d5959;
+  background-color: #d07e7e;
 }
 
 .informacionFooter p img {
-  margin-right: 5px;
+  vertical-align: sub;
 }
 
 .informacionFooter .socialMedia {
@@ -209,65 +174,61 @@ body {
   width: 35px;
   display: inline-block;
   line-height: 35px;
-  margin: 0 10px 10px 0;
+  margin: 0 .3rem 1rem 0;
   text-align: center;
   border-radius: 50%;
   border: 1px rgba(0, 0, 0, 0.2) solid;
   -webkit-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;
+  color: #000;
 }
 
 .informacionFooter .socialMedia:hover {
-  background-color: #fff;
+  background-color: white;
   -webkit-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;
+  color: #fff;
 }
 
-.bordeSolidoTop {
-  border-top: 1px solid #000;
+.galeriaProductos {
+  border: none;
+  max-width: 230px;
+  -webkit-transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in-out;
 }
 
-.bordeSolidoBottom {
-  border-bottom: 1px solid #000;
+.galeriaProductos:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-.productos {
-  width: 100px;
-  height: 100px;
+.galeriaProductos .card-img-top {
+  height: 200px;
 }
 
-/*
-
-.articulos{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-    .columnaProductos{
-		display: flex;
-		flex-direction: row;
-        .articulo{
-			color: #444;
-			font-size: $fuente-grande;
-			letter-spacing: 1px;
-			padding: 5px;
-			margin: 2px; 
-			border: 1px solid #BABABA;
-            h3{
-				text-transform: uppercase;
-				text-align: center;
-			}
-            div{
-				font-size: $fuente-chico;
-			}
-            img{
-				width: 150px;
-				height: 150px;
-			}
-		}
-	}
+.galeriaProductos .card-title {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
-*/
+.galeriaProductos .card-text {
+  font-size: 0.8rem;
+}
+
+.galeriaProductos .btn {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  padding: .2rem .5rem;
+  font-size: 0.8rem;
+}
+
+.galeriaProductos .btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #9d5959;
+}
+
 .comoComprar .card {
   border: 2px solid #000;
   border-radius: 2rem;
@@ -288,9 +249,7 @@ body {
   background-image: url(../imagenes/presentacion.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 250px;
-  height: 60vh;
-  max-height: 320px;
+  height: 450px;
 }
 
 .presentacion p {

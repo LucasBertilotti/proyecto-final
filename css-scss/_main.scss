@@ -6,7 +6,7 @@ body{
     font-family: $fuente;
     font-weight: 400;
 	color: $color-main;
-	font-size: .9rem;
+	font-size: $fuente-regular;
 }
 //------Inicio------
 //Header
@@ -25,7 +25,7 @@ body{
 		a{
 			list-style: none;
 			text-decoration: none;
-			color: #000;
+			color: $color-main;
 			&focus{
 				background-color: #000;
 			}
@@ -45,28 +45,28 @@ body{
 	}
 }
 //Inicio - Contenido principal
-.tamañoCarrousel{
-	margin-top: 100px;
-	width: 80%;
-	img{
-		height: 70vh;
-		
-		
-		max-width: 1024;
-		max-height: 700px;
-
-	/*	margin-top: 100px;
-		height: 70vh;
-		width: 100%;
-		object-fit: contain;
-		max-width: 1024;
-		max-height: 700px;		
-		
-	*/
+.carousel{
+	.tamañoCarrousel{
+		margin-top: 80px;
+		img{
+			background-size: cover;
+			background-position: center;
+			height: 60vh;
+		}
+	}
+	svg{
+		width: 30px;
+		color: color-secondary;
+	}
+}
+@media all and (max-width: 1025px){
+	.tamañoCarrousel img{
+		height: 40vh;
+		object-fit: revert;
 	}
 }
 .titulo{
-	padding-top: 10px;
+	padding-top: 20px;
     text-align: center;
     font-size: $fuente-grande;
 	font-weight: $fuente-weight-resaltado;
@@ -76,9 +76,10 @@ body{
 }
 .contenedorProducto{
 	transition: all 450ms ease-in-out;
-    img{
-		width: 200px;
-		height: 200px;
+   
+	img{
+		width: 250px;
+		height: 250px;
 		padding-bottom: 5px;
 	}
     &:hover{
@@ -91,39 +92,6 @@ body{
 		font-size: $fuente-chico;
 	}
 }
-
-//---------producto inicio
-.galeriaProductos{
-	border: none;
-	max-width: 230px;
-	transition: all 450ms ease-in-out;
-	&:hover{
-		transform: scale(1.1);
-	}
-	.card-img-top{
-		height: 200px;
-	}
-	.card-title{
-		font-size: 1rem;
-		font-weight: 600;
-	}
-	.card-text{
-		font-size: $fuente-chico;
-	}
-	.btn{
-		box-shadow: none !important;
-		padding: .2rem .5rem;
-		font-size: .8rem;
-		&:focus{
-			outline: none;
-			box-shadow: none;
-			border: 1px solid $bg-color-main;
-		}
-	}
-}
-
-
-//---------producto fin
 .mediosPago{
 	width: 50px;
 	height: 50px;
@@ -145,15 +113,14 @@ body{
 	   border: 1px solid $bg-color-main;
    }
 }
-
 .boton{
 	background-color: $bg-color-main;
 	border-color: $bg-color-main;
 	color: $color-main;
 	margin-bottom: 3px;
     &:hover{
-		background-color: $bg-color-secondary;
-		border-color: $bg-color-secondary;
+		background-color: #000;
+		border-color: #000;
 		color: $color-secondary;
 	}
 }
@@ -169,71 +136,57 @@ body{
 .informacionFooter{
 	margin-top: 3rem;
 	padding-top: 1rem;
-	background-color: $bg-color-main;
+	background-color: $bg-color-secondary;
 	p img{
-		margin-right: 5px;
+		vertical-align: sub;
 	}
 	.socialMedia{
 		height: 35px;
 		width: 35px;
 		display: inline-block;
 		line-height: 35px;
-		margin: 0 10px 10px 0;
+		margin: 0 .3rem 1rem 0;
 		text-align: center;
 		border-radius: 50%;
-		border: 1px rgba(0, 0, 0, 0.2) solid;
+		border: 1px rgba(0, 0, 0, .2) solid;
 		transition: 450ms ease-in-out;
+		color: $color-main;
 		&:hover{
-			background-color: #fff;
-			transition: 450ms ease-in-out
+			background-color: rgb(255, 255, 255);
+			transition: 450ms ease-in-out;
+			color: $color-secondary;
 		}
 	}
-}
-//Bordes
-.bordeSolidoTop{
-	border-top: 1px solid #000;
-}
-.bordeSolidoBottom{
-	border-bottom: 1px solid #000;	
 }
 //------Productos------
-.productos{
-	width: 100px;
-	height: 100px;
-}
-
-/*
-
-.articulos{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-    .columnaProductos{
-		display: flex;
-		flex-direction: row;
-        .articulo{
-			color: #444;
-			font-size: $fuente-grande;
-			letter-spacing: 1px;
-			padding: 5px;
-			margin: 2px; 
-			border: 1px solid #BABABA;
-            h3{
-				text-transform: uppercase;
-				text-align: center;
-			}
-            div{
-				font-size: $fuente-chico;
-			}
-            img{
-				width: 150px;
-				height: 150px;
-			}
+.galeriaProductos{
+	border: none;
+	max-width: 230px;
+	transition: all 450ms ease-in-out;
+	&:hover{
+		transform: scale(1.1);
+	}
+	.card-img-top{
+		height: 200px;
+	}
+	.card-title{
+		font-size: $fuente-regular;
+		font-weight: 600;
+	}
+	.card-text{
+		font-size: $fuente-chico;
+	}
+	.btn{
+		box-shadow: none !important;
+		padding: .2rem .5rem;
+		font-size: $fuente-chico;
+		&:focus{
+			outline: none;
+			box-shadow: none;
+			border: 1px solid #000;
 		}
 	}
 }
-
-*/
 //------Como comprar------
 .comoComprar .card{
 	border: 2px solid #000;
@@ -252,13 +205,13 @@ body{
 	background-image: url(../imagenes/presentacion.jpg);
 	background-position: center;
 	background-size: cover;
-	min-height: 250px;
-	height: 60vh;
-	max-height: 320px;
+	height: 450px;
 }
-.presentacion p{
+.presentacion{ 
+	p{
 	letter-spacing: .5px;
     word-spacing: .5px;
+	}
 }
 //------Contacto------
 .formulario{

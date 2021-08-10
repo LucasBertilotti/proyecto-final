@@ -55,26 +55,20 @@ body {
   }
 }
 
-.carousel .tamañoCarrousel {
-  margin-top: 80px;
-}
-
-.carousel .tamañoCarrousel img {
+.medidasCarrousel img {
   background-size: cover;
   background-position: center;
   height: 60vh;
 }
 
-.carousel svg {
+.medidasCarrousel svg {
   width: 30px;
   color: #fff;
 }
 
-@media all and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
   .tamañoCarrousel img {
     height: 40vh;
-    -o-object-fit: revert;
-       object-fit: revert;
   }
 }
 
@@ -86,7 +80,11 @@ body {
 }
 
 .contenido {
-  padding-top: 80px;
+  margin-top: 80px;
+}
+
+h1 {
+  font-size: 1rem;
 }
 
 .contenedorProducto {
@@ -149,24 +147,15 @@ body {
   color: #fff;
 }
 
-.footer {
-  background-color: #5f4e4e;
-}
-
-.footer p {
-  color: #000;
-  font-size: 0.8rem;
-  margin: 0;
-}
-
 .informacionFooter {
   margin-top: 3rem;
   padding-top: 1rem;
-  background-color: #d07e7e;
+  background-color: #8e7c7c;
 }
 
 .informacionFooter p img {
-  vertical-align: sub;
+  width: 20px;
+  height: 20px;
 }
 
 .informacionFooter .socialMedia {
@@ -188,6 +177,16 @@ body {
   -webkit-transition: 450ms ease-in-out;
   transition: 450ms ease-in-out;
   color: #fff;
+}
+
+.footer {
+  background-color: #5f4e4e;
+}
+
+.footer p {
+  color: #000;
+  font-size: 0.8rem;
+  margin: 0;
 }
 
 .galeriaProductos {
@@ -226,7 +225,7 @@ body {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  border: 1px solid #9d5959;
+  border: 1px solid #000;
 }
 
 .comoComprar .card {
@@ -252,6 +251,18 @@ body {
   height: 450px;
 }
 
+@media only screen and (max-width: 1025px) {
+  .contenedorImagen {
+    background-image: url(../imagenes/presentacion-tablet.jpg);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contenedorImagen {
+    background-image: url(../imagenes/presentacion-mobile.jpg);
+  }
+}
+
 .presentacion p {
   letter-spacing: .5px;
   word-spacing: .5px;
@@ -260,7 +271,7 @@ body {
 .formulario {
   padding: 20px;
   border: 2px solid #000;
-  border-radius: 5%;
+  border-radius: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

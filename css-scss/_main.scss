@@ -45,24 +45,20 @@ body{
 	}
 }
 //Inicio - Contenido principal
-.carousel{
-	.tamañoCarrousel{
-		margin-top: 80px;
-		img{
-			background-size: cover;
-			background-position: center;
-			height: 60vh;
-		}
+.medidasCarrousel{
+	img{
+		background-size: cover;
+		background-position: center;
+		height: 60vh;
 	}
 	svg{
 		width: 30px;
-		color: color-secondary;
+		color: $color-secondary;
 	}
 }
-@media all and (max-width: 1025px){
+@media only screen and (max-width: 1025px){
 	.tamañoCarrousel img{
 		height: 40vh;
-		object-fit: revert;
 	}
 }
 .titulo{
@@ -72,11 +68,13 @@ body{
 	font-weight: $fuente-weight-resaltado;
 }
 .contenido{
-	padding-top: 80px;
+	margin-top: 80px;
+}
+h1{
+	font-size: $fuente-regular;
 }
 .contenedorProducto{
 	transition: all 450ms ease-in-out;
-   
 	img{
 		width: 250px;
 		height: 250px;
@@ -125,20 +123,13 @@ body{
 	}
 }
 //Footer
-.footer{
-	background-color: #5f4e4e;
-	p{
-        color: $color-main;
-		font-size: $fuente-chico;
-		margin: 0;
-	}
-}
 .informacionFooter{
 	margin-top: 3rem;
 	padding-top: 1rem;
 	background-color: $bg-color-secondary;
 	p img{
-		vertical-align: sub;
+		width: 20px;
+		height: 20px;
 	}
 	.socialMedia{
 		height: 35px;
@@ -156,6 +147,14 @@ body{
 			transition: 450ms ease-in-out;
 			color: $color-secondary;
 		}
+	}
+}
+.footer{
+	background-color: #5f4e4e;
+	p{
+        color: $color-main;
+		font-size: $fuente-chico;
+		margin: 0;
 	}
 }
 //------Productos------
@@ -207,17 +206,25 @@ body{
 	background-size: cover;
 	height: 450px;
 }
-.presentacion{ 
-	p{
+@media only screen and (max-width: 1025px){
+	.contenedorImagen{
+		background-image: url(../imagenes/presentacion-tablet.jpg);
+	}
+}
+@media only screen and (max-width: 500px){
+	.contenedorImagen{
+		background-image: url(../imagenes/presentacion-mobile.jpg);
+	}
+}
+.presentacion p{ 
 	letter-spacing: .5px;
     word-spacing: .5px;
-	}
 }
 //------Contacto------
 .formulario{
 	padding: 20px;
 	border: 2px solid #000;
-	border-radius: 5%;
+	border-radius: 2rem;
 	align-items: center;
 	min-height: 40vh;
 	.form-control{

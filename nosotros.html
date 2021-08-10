@@ -10,43 +10,41 @@
 	<link rel="stylesheet" href="css-scss/estilos.css" type="text/css">
 </head>
 <body>
-	<header>
-		<div class="container-fluid header">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand logo" href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-link" href="index.html">Inicio </a>
-						<a class="nav-link" href="producto.html">Productos</a>
-						<a class="nav-link" href="comocomprar.html">Cómo Comprar</a>
-						<a class="nav-link active" href="nosotros.html">Nosotros</a>
-						<a class="nav-link" href="contacto.html">Contacto</a>
-					</div>
-					<div class="contenedorBotonesHeader">
-						<span class="dropdown">
-							<button class="botonesHeader btn rounded-pill dropdown-toggle my-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<a href="#"><i class="bi bi-person-fill"></i><img src="imagenes/person-fill.svg" alt="Botón para ingresar a tú cuenta"> Mi cuenta</a>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<button class="btn" data-toggle="modal" data-target="#headerModal">
-									<a class="dropdown-item boton btn" href="#">Ingresar</a>
-									<a class="dropdown-item boton btn" href="#">Crear cuenta</a>
-								</button>
-							</div>
-						</span>
-						<span>
-							<button class="botonesHeader btn rounded-pill my-1" data-toggle="modal" data-target="#headerModal">
-								<a href="#"><i class="bi bi-bag"></i><img src="imagenes/bag.svg" alt="Carrito de compras"> Carrito</a>
-							</button>
-						</span>				
-					</div>			
+	<div class="container-fluid header">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand logo" href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link" href="index.html">Inicio</a>
+					<a class="nav-link" href="producto.html">Productos</a>
+					<a class="nav-link" href="comocomprar.html">Cómo Comprar</a>
+					<a class="nav-link active" href="nosotros.html">Nosotros</a>
+					<a class="nav-link" href="contacto.html">Contacto</a>
 				</div>
-			</nav>
-		</div>
-	</header>
+				<div class="contenedorBotonesHeader">
+					<span class="dropdown">
+						<button class="botonesHeader btn rounded-pill dropdown-toggle my-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a href="#"><i class="bi bi-person-fill"></i><img src="imagenes/person-fill.svg" alt="Botón para ingresar a tú cuenta"> Mi cuenta</a>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<button class="btn" data-toggle="modal" data-target="#headerModal">
+								<a class="dropdown-item boton btn" href="#">Ingresar</a>
+								<a class="dropdown-item boton btn" href="#">Crear cuenta</a>
+							</button>
+						</div>
+					</span>
+					<span>
+						<button class="botonesHeader btn rounded-pill my-1" data-toggle="modal" data-target="#headerModal">
+							<a href="#"><i class="bi bi-bag"></i><img src="imagenes/bag.svg" alt="Carrito de compras"> Carrito</a>
+						</button>
+					</span>				
+				</div>			
+			</div>
+		</nav>
+	</div>
 	<div class="contenido">
 		<div class="text-center">
 			<p class="titulo">NOSOTROS</p>
@@ -70,7 +68,7 @@
 				<img src="imagenes/whatsapp.svg" alt="Icono de whatsapp">
 				<strong>WHATSAPP</strong>
 			</p>
-			<p>+549(11) 6811-6930</p>
+			<p>+549 11 68116930</p>
 		</div>
 		<div class="col-12 col-md-3 col-lg-3">
 			<p>
@@ -80,7 +78,8 @@
 			</p>
 			<p>Lunes a Viernes</p>
 			<p>9:00 a 13:00 - 14:00 a 18:00</p>
-			<p>Sábado - 9:00 a 13:00</p>
+			<p>Sábado</p>
+			<p>9:00 a 13:00</p>
 		</div>
 		<div class="col-12 col-md-3 col-lg-3">
 			<p>
@@ -107,7 +106,7 @@
 				<strong>NEWSLETTER</strong>
 			</p>
 			<p class="text-left m-0">Dejanos tus datos para suscribirte a nuestro Newsletter y recibir en tu email las últimas novedades de La Aguada.</p>
-			<form>
+			<form  action="#" method="POST">
 				<div class="form-group row my-0 reseteoFormulario">
 					<div class="col-sm-12">
 						<label for="NombreApellido"></label>
@@ -120,8 +119,9 @@
 						<input type="email" class="form-control" placeholder="Email" id="inputEmail3">
 					</div>
 				</div>
-				<div class="col-sm-10 text-left mb-3 reseteoFormulario">
-					<button type="button" class="boton btn btn-dark rounded-pill" data-toggle="modal" data-target="#newsletterModal">Enviar</button>
+				<div class="text-left mb-3 reseteoFormulario">
+					<button type="button" class="boton btn btn-dark rounded-pill bg-dark text-light border-0" data-toggle="modal" data-target="#newsletterModal">Enviar</button>
+					<button type="reset" class="boton btn btn-dark rounded-pill bg-dark text-light border-0">Limpiar</button>
 				</div>
 			</form>
 		</div>

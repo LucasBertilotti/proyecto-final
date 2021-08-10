@@ -11,43 +11,41 @@
 	<link rel="stylesheet" href="css-scss/estilos.css" type="text/css">
 </head>
 <body>
-	<header>
-		<div class="container-fluid header">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand logo" href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
-						<a class="nav-link" href="index.html">Inicio </a>
-						<a class="nav-link active" href="producto.html">Productos</a>
-						<a class="nav-link" href="comocomprar.html">Cómo Comprar</a>
-						<a class="nav-link" href="nosotros.html">Nosotros</a>
-						<a class="nav-link" href="contacto.html">Contacto</a>
-					</div>
-					<div class="contenedorBotonesHeader">
-						<span class="dropdown">
-							<button class="botonesHeader btn rounded-pill dropdown-toggle my-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<a href="#"><i class="bi bi-person-fill"></i><img src="imagenes/person-fill.svg" alt="Botón para ingresar a tú cuenta"> Mi cuenta</a>
-							</button>
-							<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								<button class="btn" data-toggle="modal" data-target="#headerModal">
-									<a class="dropdown-item boton btn" href="#">Ingresar</a>
-									<a class="dropdown-item boton btn" href="#">Crear cuenta</a>
-								</button>
-							</div>
-						</span>
-						<span>
-							<button class="botonesHeader btn rounded-pill my-1" data-toggle="modal" data-target="#headerModal">
-								<a href="#"><i class="bi bi-bag"></i><img src="imagenes/bag.svg" alt="Carrito de compras"> Carrito</a>
-							</button>
-						</span>				
-					</div>			
+	<div class="container-fluid header">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand logo" href="index.html"><img src="imagenes/logo.png" alt="Logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-link" href="index.html">Inicio </a>
+					<a class="nav-link active" href="producto.html">Productos</a>
+					<a class="nav-link" href="comocomprar.html">Cómo Comprar</a>
+					<a class="nav-link" href="nosotros.html">Nosotros</a>
+					<a class="nav-link" href="contacto.html">Contacto</a>
 				</div>
-			</nav>
-		</div>
-	</header>
+				<div class="contenedorBotonesHeader">
+					<span class="dropdown">
+						<button class="botonesHeader btn rounded-pill dropdown-toggle my-1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<a href="#"><i class="bi bi-person-fill"></i><img src="imagenes/person-fill.svg" alt="Botón para ingresar a tú cuenta"> Mi cuenta</a>
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<button class="btn" data-toggle="modal" data-target="#headerModal">
+								<a class="dropdown-item boton btn" href="#">Ingresar</a>
+								<a class="dropdown-item boton btn" href="#">Crear cuenta</a>
+							</button>
+						</div>
+					</span>
+					<span>
+						<button class="botonesHeader btn rounded-pill my-1" data-toggle="modal" data-target="#headerModal">
+							<a href="#"><i class="bi bi-bag"></i><img src="imagenes/bag.svg" alt="Carrito de compras"> Carrito</a>
+						</button>
+					</span>				
+				</div>			
+			</div>
+		</nav>
+	</div>
 	<div class="container contenido">
 		<p class=" titulo">NUESTROS PRODUCTOS</p>
 	</div>
@@ -56,8 +54,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/cojinillo-negro.jpg" class="card-img-top img-fluid" alt="Cojinillo de lana color negro">
 				<div class="card-body">
-					<h5 class="card-title">$5.500</h5>
-					<p class="card-text m-0">Cojinillo de lana de oveja natural</p>
+					<span class="card-title">$5.500</span>
+					<h3 class="card-text my-1">Cojinillo de lana de oveja</h3>
 					<p class="card-text">95cm x 60cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -67,8 +65,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/pehual-cuero.jpg" class="card-img-top img-fluid" alt="Pehual de cuero crudo">
 				<div class="card-body">
-					<h5 class="card-title">$1.750</h5>
-					<p class="card-text m-0">Pehual de cuero crudo</p>
+					<span class="card-title">$1.750</span>
+					<h3 class="card-text my-1">Pehual de cuero</h3>
 					<p class="card-text">170cm x 7cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -78,8 +76,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/estribos-cuero2.jpg" class="card-img-top img-fluid" alt="Estribos arqueros de cuero crudo">
 				<div class="card-body">
-					<h5 class="card-title">$2.750</h5>
-					<p class="card-text m-0">Estribos arqueros de cuero crudo</p>
+					<span class="card-title">$2.750</span>
+					<h3 class="card-text my-1">Estribos arqueros de cuero</h3>
 					<p class="card-text">10,5cm x 2cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -89,8 +87,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/estribos-cuero.jpg" class="card-img-top img-fluid" alt="Estribos arqueros de cuero crudo">
 				<div class="card-body">
-					<h5 class="card-title">$2.750</h5>
-					<p class="card-text m-0">Estribos arqueros de cuero crudo</p>
+					<span class="card-title">$2.750</span>
+					<h3 class="card-text my-1">Estribos arqueros de cuero</h3>
 					<p class="card-text">10,5cm x 2cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -100,8 +98,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/palera-lana-natural.jpg" class="card-img-top img-fluid" alt="Peleras de lana de oveja de color natural">
 				<div class="card-body">
-					<h5 class="card-title">$5.000</h5>
-					<p class="card-text m-0">Peleras de lana de oveja - natural</p>
+					<span class="card-title">$5.000</span>
+					<h3 class="card-text my-1">Peleras de lana de oveja</h3>
 					<p class="card-text">60cm x 90cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -111,8 +109,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/palera-lana-negro.jpg" class="card-img-top img-fluid" alt="Peleras de lana de oveja de color negro">
 				<div class="card-body">
-					<h5 class="card-title">$5.000</h5>
-					<p class="card-text m-0">Peleras de lana de oveja - negro</p>
+					<span class="card-title">$5.000</span>
+					<h3 class="card-text my-1">Peleras de lana de oveja</h3>
 					<p class="card-text">60cm x 90cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -122,8 +120,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/lazo-10mts.jpg" class="card-img-top img-fluid" alt="Lazo de 10 metros">
 				<div class="card-body">
-					<h5 class="card-title">$2.500</h5>
-					<p class="card-text m-0">Lazo trenza de cuatrocientos</p>
+					<span class="card-title">$2.500</span>
+					<h3 class="card-text my-1">Lazo trenza de 400</h3>
 					<p class="card-text">10 mts</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -133,8 +131,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/lazo-15mts.jpg" class="card-img-top img-fluid" alt="Lazo de 15 metros">
 				<div class="card-body">
-					<h5 class="card-title">$2.900</h5>
-					<p class="card-text m-0">Lazo trenza de cuatrocientos</p>
+					<span class="card-title">$2.900</span>
+					<h3 class="card-text my-1">Lazo trenza de 400</h3>
 					<p class="card-text">15 mts</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -144,8 +142,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/pehual-cuero-crudo.jpg" class="card-img-top img-fluid" alt="Pehual de cuero crudo">
 				<div class="card-body">
-					<h5 class="card-title">$1.900</h5>
-					<p class="card-text m-0">Pehual de cuero crudo</p>
+					<span class="card-title">$1.900</span>
+					<h3 class="card-text my-1">Pehual de cuero crudo</h3>
 					<p class="card-text">92cm x 8cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -155,8 +153,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/cuchillo-mango-madera.jpg" class="card-img-top img-fluid" alt="Cuchillo con mango de madera y una hoja de 18 centímetros">
 				<div class="card-body">
-					<h5 class="card-title">$3.200</h5>
-					<p class="card-text m-0">Cuchillo con mango de madera</p>
+					<span class="card-title">$3.200</span>
+					<h3 class="card-text my-1">Cuchillo con mango de madera</h3>
 					<p class="card-text">Hoja de 18cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -166,8 +164,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/cuchillo-criollo.jpg" class="card-img-top img-fluid" alt="Cuchillo criollo con una hoja de 16 centímetros">
 				<div class="card-body">
-					<h5 class="card-title">$4.000</h5>
-					<p class="card-text m-0">Cuchillo criollo</p>
+					<span class="card-title">$4.000</span>
+					<h3 class="card-text my-1">Cuchillo criollo</h3>
 					<p class="card-text">Hoja de 16cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -177,8 +175,8 @@
 			<div class="card galeriaProductos shadow mx-auto">
 				<img src="productos/cuchillo-antiguo.jpg" class="card-img-top img-fluid" alt="Cuchillo antiguo con una hoja de 14 centímetros">
 				<div class="card-body">
-					<h5 class="card-title">$4.000</h5>
-					<p class="card-text m-0">Cuchillo antiguo</p>
+					<span class="card-title">$4.000</span>
+					<h3 class="card-text my-1">Cuchillo antiguo</h3>
 					<p class="card-text">Hoja de 14cm</p>
 					<button href="#" class="btn boton" data-toggle="modal" data-target="#productosModal">Agregar al carrito</button>
 				</div>
@@ -192,7 +190,7 @@
 				<img src="imagenes/whatsapp.svg" alt="Icono de whatsapp">
 				<strong>WHATSAPP</strong>
 			</p>
-			<p>+549(11) 6811-6930</p>
+			<p>+549 11 68116930</p>
 		</div>
 		<div class="col-12 col-md-3 col-lg-3">
 			<p>
@@ -202,7 +200,8 @@
 			</p>
 			<p>Lunes a Viernes</p>
 			<p>9:00 a 13:00 - 14:00 a 18:00</p>
-			<p>Sábado - 9:00 a 13:00</p>
+			<p>Sábado</p>
+			<p>9:00 a 13:00</p>
 		</div>
 		<div class="col-12 col-md-3 col-lg-3">
 			<p>
@@ -229,7 +228,7 @@
 				<strong>NEWSLETTER</strong>
 			</p>
 			<p class="text-left m-0">Dejanos tus datos para suscribirte a nuestro Newsletter y recibir en tu email las últimas novedades de La Aguada.</p>
-			<form>
+			<form action="#" method="POST">
 				<div class="form-group row my-0 reseteoFormulario">
 					<div class="col-sm-12">
 						<label for="NombreApellido"></label>
@@ -242,8 +241,9 @@
 						<input type="email" class="form-control" placeholder="Email" id="inputEmail3">
 					</div>
 				</div>
-				<div class="col-sm-10 text-left mb-3 reseteoFormulario">
-					<button type="button" class="boton btn btn-dark rounded-pill" data-toggle="modal" data-target="#newsletterModal">Enviar</button>
+				<div class="text-left mb-3 reseteoFormulario">
+					<button type="button" class="boton btn btn-dark rounded-pill bg-dark text-light border-0" data-toggle="modal" data-target="#newsletterModal">Enviar</button>
+					<button type="reset" class="boton btn btn-dark rounded-pill bg-dark text-light border-0">Limpiar</button>
 				</div>
 			</form>
 		</div>
